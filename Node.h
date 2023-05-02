@@ -2,11 +2,11 @@
 #define NODE_H
 
 class Node {
-public:
-    int data;
-    Node* link;
+    public:
+        Node(int, Node*);
 
-    Node(int, Node*);
+        int data;
+        Node* link;
 };
 
 #endif

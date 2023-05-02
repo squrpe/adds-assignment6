@@ -4,6 +4,8 @@
 #include "Node.h"
 #include "LinkedList.h"
 
+//a1802741
+
 using namespace std;
 
 vector<int> split_to_ints(string input,string valid) {
@@ -32,7 +34,7 @@ vector<int> split_to_ints(string input,string valid) {
 }
 
 
-int main(void) {
+int main() {
 	// take-in inputs -- note this code assumes for a valid input format!
 	string user_input;
 	getline(cin, user_input);
