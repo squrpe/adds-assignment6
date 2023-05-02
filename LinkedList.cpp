@@ -82,22 +82,24 @@ bool LinkedList::deletePosition(int pos) {
 }
 
 int LinkedList::get(int pos) {
-
+    
     if (head == nullptr) {
-        return std::numeric_limits<int>::max();
+        return std::numeric_limits<int>::min();
     }
 
     Node* current = head;
 
-    for (int i = 0; i < pos && current != nullptr; i++) {
+    for (int i = 1; i < pos && current != nullptr; i++) {
         current = current->link;
     }
 
     if (current == nullptr) {
-        return std::numeric_limits<int>::max();
+        return std::numeric_limits<int>::min();
     }
 
+
     return current->data;
+
 }
 
 int LinkedList::search(int target) {
